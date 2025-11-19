@@ -1,0 +1,19 @@
+<script>
+    var Bairro = prompt("Bairro de entrega:");
+    var taxaEntrega;
+    switch (Bairro.toLowerCase()) {
+        case "centro":
+            taxaEntrega = 5.00;
+            break;
+        case "fragata":
+        case "tres vendas":
+            taxaEntrega = 7.50;
+            break;
+        case "laranjeiral":
+            taxaEntrega = 8.00;
+            break;
+        default:
+            taxaEntrega = 10.00;
+    }
+    alert("Taxa de entrega: R$ " + taxaEntrega.toFixed(2));
+</script>
