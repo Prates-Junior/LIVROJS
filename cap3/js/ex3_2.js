@@ -5,6 +5,10 @@ function calcularPeso() {
     var rbFeminino = document.getElementById("rbFeminino");
     var inAltura = document.getElementById("inAltura");
     var outResposta = document.getElementById("outResposta");
+<<<<<<< HEAD
+=======
+    var 
+>>>>>>> b9a0b01afed8599183b6871294f488dc7934b4a0
 
     // obtém o conteúdo dos campos de entrada
     var nome = inNome.value;
@@ -50,3 +54,25 @@ function limparCampos() {
 // cria referência ao botão e associa function ao evento click
 var btLimpar = document.getElementById("btLimpar");
 btLimpar.addEventListener("click", limparCampos);
+<<<<<<< HEAD
+=======
+
+/*
+/**
+ * Limpa os campos de entrada e recarrega a página
+ */
+function limparCampos() {
+    // recarrega a página
+    location.reload();
+    // posiciona (joga o foco) no elemento inNome
+    // para que o usuário possa digitar novamente o nome
+    document.getElementById("inNome").focus();
+}
+var btLimpar = document.getElementById("btLimpar");
+btLimpar.addEventListener("click", limparCampos);
+
+
+
+
+
+>>>>>>> b9a0b01afed8599183b6871294f488dc7934b4a0
