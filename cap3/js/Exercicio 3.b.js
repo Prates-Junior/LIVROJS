@@ -5,7 +5,7 @@ function velocidadePermitida() {
     var outResposta = document.getElementById("outResposta");
     
 
-    //  // se não preencheu ou Not-a-Number (NaN)
+    // se não preencheu ou Not-a-Number (NaN)
     if (velPermitida == "" || isNaN(velPermitida) ||
         velCondutor == "" || isNaN(velCondutor)) {
         // exibe mensagem de advertência
@@ -29,7 +29,7 @@ function velocidadePermitida() {
         outResposta.textContent = "Situação: " + "Multa grave.";
     }
     //exibe a resposta
-    //outResposta.textContent = "Situação: " + outresposta;
+    outResposta.textContent = "Situação: " + outresposta;
 }
 
 // Adiciona um ouvinte de evento ao botão para chamar a função quando clicado
