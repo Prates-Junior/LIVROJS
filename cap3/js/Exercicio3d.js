@@ -11,7 +11,7 @@ function ladosTriangulo() {
         outLados.textContent = "Formam um triângulo.";
 
         // determina o tipo de triângulo
-        if (inLadoA === inLadoB && inLadoB === inLadoC) {
+        if (inLadoA === inLadoB && inLadoB === inLadoC){ 
             outTipo.textContent = "Tipo: Equilátero.";
         } else if (inLadoA === inLadoB || inLadoA === inLadoC || inLadoB === inLadoC) {
             outTipo.textContent = "Tipo: Isósceles.";
