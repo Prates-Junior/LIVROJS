@@ -8,7 +8,7 @@ function ladosTriangulo() {
 
     // verifica se os valores inseridos formam um triângulo válido
     if (inLadoA < inLadoB + inLadoC && inLadoB < inLadoA + inLadoC && inLadoC < inLadoA + inLadoB) {
-        outLados.textContent = "Formam um triângulo.";
+        outLados.textContent = "Lados podem Formar um triângulo.";
 
         // determina o tipo de triângulo
         if (inLadoA === inLadoB && inLadoB === inLadoC){ 
@@ -26,3 +26,13 @@ function ladosTriangulo() {
 // adiciona um ouvinte de evento ao botão para chamar a função quando clicado
 var btVerificar = document.getElementById("btVerificar");
 btVerificar.addEventListener("click", ladosTriangulo);
+
+// função para limpar os campos de entrada e saída
+function limparCampos() {
+    document.getElementById("inLadoA").value = "";
+    document.getElementById("inLadoB").value = "";
+    document.getElementById("inLadoC").value = "";
+    document.getElementById("outLados").textContent = "";
+    document.getElementById("outTipo").textContent = "";
+    document.getElementById("inLadoA").focus();
+}
